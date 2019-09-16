@@ -1,0 +1,63 @@
+*Lista de comando Git
+
+  -Ajuda Geral:
+
+	git help 
+
+  -Ajuda especifica:
+
+	git help add
+	git help commit
+	git help <qualquer_comando)
+
+
+*Configurando seu git
+
+  -Usuario:
+	git config --global user.name "Seu nome"
+
+  -Email:
+	git config --global user.email "Seu@email.com
+  
+  -Editor:
+	git config --global core.editor vim
+
+  -Merger:
+	git config --global merger.tool vimdiff
+
+  -Ignorar arquivos:
+	git config --global core.excludesfile ~/.gitignore
+
+  -Listar configuracoes:
+	git list
+*Repositorio Local
+
+  -Criando um novo repositorio
+	git init
+
+  -Verificando estado diretorio
+	git status
+
+  -Adicionar direitorio (staged area)
+	git add nome_arquivo
+  
+  -Adicionar todos diretorios
+	git add .
+
+  -Comitar diretorio
+	git commit nome_arquivo -m "Sua mensagem"
+
+  -Remover arquivo
+	git rm nome_arquivo
+
+  -Remover diretorio(caso esteja cheio)
+	git rm -r nome_arquivo
+
+*Visualizando Historico
+
+  -Exibit historico de commits
+	git log
+  
+  -Exibir historico das duas ultimas alteracoes
+	git log -p -2
+
